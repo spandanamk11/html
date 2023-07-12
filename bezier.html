@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="beziercurve();">Mybeziercurve</button><br>  
+    <canvas id="beziercurve" width="500" height="500"
+    style="border: 2px solid black; "></canvas>
+    <script>
+        function beziercurve()
+        {
+        const ctx=document.getElementById("beziercurve").getContext("2d");
+        ctx.moveTo(100,100);
+        ctx.bezierCurveTo(300,300,400,100,300,100);
+        ctx.lineWidth=5;
+        ctx.strokeStyle="pink";
+        ctx.stroke();
+        ctx.fillStyle="skyblue";
+        ctx.fill();
+        }
+    </script>
+</body>
+</html>

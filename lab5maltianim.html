@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB5</title>
+</head>
+<style>
+    #anim1
+    {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        border-radius: 20px;
+        animation-name: example1;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes example1 
+    {
+        20%
+        {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+        }
+        50%
+        {
+            width: 600px;
+            height: 600px;
+            background-color:palevioletred;
+        }
+        80%
+        {
+            transform: rotate(180deg);
+        }
+    }
+    #anim2
+    {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        border-radius: 20px;
+        animation-name: example2;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-timing-function: ease-in;
+        animation-iteration-count:infinite;
+
+    }
+    @keyframes example2
+    {
+        20%
+        {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+        }
+        50%
+        {
+            width: 400px;
+            height: 400px;
+            background-color:palevioletred;
+        }
+        80%
+        {
+            transform: rotate(180deg);
+        }
+    }
+    #img
+    {
+        
+        background-color: aqua;
+        border-radius: 20px;
+        animation-name: example3;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-timing-function: ease-in;
+        animation-iteration-count:infinite;
+        
+    }
+    @keyframes example3 
+    {
+        20%
+        {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+        }
+        50%
+        {
+            width: 400px;
+            height: 400px;
+            background-color:palevioletred;
+        }
+        80%
+        {
+            transform: rotate(180deg);
+        }
+    }
+</style>
+<body>
+    <div id="anim1"><img id="img" src="panda.jpg" alt="loading...." width="150" height="150"></div>
+    <div id="anim2"></div>
+</body>
+</html>

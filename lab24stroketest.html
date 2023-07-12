@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrokeText</title>
+</head>
+<body>
+    <canvas id="Mycanvas" width="500" height="500"
+    style="border: 2px solid black; "></canvas>
+    <script>
+        const canvas=document.getElementById("Mycanvas");
+        const ctx=canvas.getContext("2d");
+        ctx.font="30px Arial";
+        var grad=ctx.createLinearGradient(0,0,canvas.width,0);
+        grad.addColorStop("0","green");
+        grad.addColorStop("0.2","red");
+        grad.addColorStop("0.7","blue");
+        ctx.fillStyle=grad;
+        ctx.fillText("BLDE BCA JKD",10,80);
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body
+    {
+        background-color: skyblue;
+    }
+    #container
+    {
+        width: 600px;
+        height: 600px;
+        top: 20%;
+        left: 30%;
+        position: absolute;
+        animation-name: example;
+        animation-duration:2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-fill-mode: forwards;
+    }
+    .cloud
+    {
+        width: 100px;
+        height: 100px;
+        background-color:whitesmoke;
+        position: absolute;
+        border-radius: 50%;
+    }
+    #section1
+    {
+        top: 33%;
+        left: 33%;
+    }
+    
+    #section2
+    {
+        top: 25%;
+        left: 25%;
+    }
+    
+    #section3
+    {
+        top: 23%;
+        left: 37%;
+    }
+    
+    #section4
+    { 
+        top: 30%;
+        left: 45%;
+    }
+    @keyframes example
+    {
+        from
+        {
+            top: 0px;
+        }
+        to
+        {
+            top: 100px;
+        }
+    }
+    
+</style>
+</head>
+<body>
+    <div id="container">
+        <div class="cloud" id="section1"></div>
+        <div class="cloud" id="section2"></div>
+        <div class="cloud" id="section3"></div>
+        <div class="cloud" id="section4"></div>   
+    </div>
+</body>
+</html>

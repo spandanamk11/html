@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="beziercurve" width="500" height="500"
+    style="border: 2px solid black; "></canvas>
+    <script>
+        const ctx=document.getElementById("beziercurve").getContext("2d");
+        ctx.moveTo(20,20);
+        ctx.bezierCurveTo(20,300,300,300,300,20)
+        ctx.lineWidth=5;
+        ctx.strokeStyle="pink";
+        ctx.stroke();
+        ctx.fillStyle="skyblue";
+        ctx.fill();
+    </script>
+        
+</body>
+</html>

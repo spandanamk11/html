@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light ON & OFF</title>
+<style>
+    body{
+        background-color: aqua;
+    }
+
+    div{
+
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    </style>
+    <input type="button" name="ON" id="lighton" onclick="ON()" value="ON">
+    <input type="button" name="OFF" id="lighton" onclick="OFF()" value="OFF">
+    
+    <div id="red"></div>
+    <div id="black"></div>
+    <script>
+        function ON()
+        {
+            document.getElementById("red").style.backgroundColor="red";
+        }
+        function OFF()
+        {
+            document.getElementById("black").style.backgroundColor="black";
+        }
+    </script>
+    </head>
+    <body>
